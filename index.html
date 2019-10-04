@@ -1,0 +1,40 @@
+<html style=" justify-content: center; align-content:center; display: flex; background-color: #8e4a91; margin-top: 0">
+    <title>The Cutest Couple of 2020</title>
+    <script>
+        function showResults() {
+            document.getElementById('yes').innerHTML = "99% of People agree";
+            document.getElementById('no').innerHTML = "1% of People are wrong";
+        }
+        function changePicture() {
+            if(document.getElementById('kristen').src.includes('kristenmax2020.jpg')){
+                document.getElementById('kristen').src = 'kristenshitter.jpg'
+            }else{
+                document.getElementById('kristen').src = 'kristenmax2020.jpg'
+            }
+        }
+    </script>
+    <body style="width: 80%; background-color: #bd8cbf; display: grid; margin-top: 0">
+        <div style="font-size: 56px; font-weight: 900; color: purple; margin-left: 10%">Kristen &</div>
+        <div style="font-size: 56px; font-weight: 900; color: orange; margin-left: 10%">Max 2020</div>
+
+        <div style="width: 90%; margin: 8px auto 8px auto; border: #8E4A91 1px solid"></div>
+
+        <img id="kristen" onclick="changePicture()" src="kristenmax2020.jpg" style="width: 80%; margin-left: auto; margin-right: auto; height: auto;">
+
+        <div style="width: 90%; margin: 8px auto 8px auto; border: #8E4A91 1px solid"></div>
+
+        <div style="display: inline-flex; margin: 0 auto 0 auto; color: white; font-size: 32px">Should  <div style="margin: 0 4px 0 4px; color:orange">Max</div> and <div style="margin: 0 4px 0 4px; color:purple">Kristen</div> Date?</div>
+        <div style="display: inline-flex; margin-left: auto; margin-right: auto; align-items:center; justify-content: center">
+            <div style="color: white; font-size: 24px; margin-right: 24px" id="yes"></div>
+            <button style="display: inline-block;  border: none;padding: 1rem 2rem;margin: 0 4px 0 0;text-decoration: none;background: #19a400;color: #ffffff;font-family: sans-serif;font-size: 1rem;cursor: pointer;text-align: center;transition: background 250ms ease-in-out,transform 150ms ease;" onclick="showResults()">Yes</button>
+            <button style="display: inline-block;border: none;padding: 1rem 2rem;margin: 0 0 0 4px;text-decoration: none;background: #a40004;color: #ffffff;font-family: sans-serif;font-size: 1rem;cursor: pointer;text-align: center;transition: background 250ms ease-in-out,transform 150ms ease;" onclick="showResults()">No</button>
+            <div style="color: white; font-size: 24px; margin-left: 24px" id="no"></div>
+        </div>
+
+        <div style="width: 90%; margin: 8px auto 8px auto; border: #8E4A91 1px solid"></div>
+
+        <div>
+            I spent $12 dollar and 2 hours of my life on the this shitty joke. Now convince Kristen to tell max how she really feels
+        </div>
+    </body>
+</html>
